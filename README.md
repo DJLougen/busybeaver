@@ -16,7 +16,6 @@ busyBeaver is a benchmark evaluation harness that proves you can run frontier-le
 
 - **Qwen2.5-Coder-3B-Instruct** — 3.1B parameters from Alibaba
 - Quantized to **Q4_K_M** (4-bit) = **2.1GB** GGUF file
-- Smaller than a single photo on your phone
 
 ### Hardware
 
