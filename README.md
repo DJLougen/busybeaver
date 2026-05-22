@@ -9,7 +9,7 @@ busyBeaver is a benchmark evaluation harness that proves you can run frontier-le
 | Benchmark | busyBeaver (3B on CPU) | Command A+ (218B MoE) | Delta | Status |
 |-----------|:--:|:--:|:--:|:--:|
 | **HumanEval** | **89.0%** (146/164) | 75.0% | **+14.0%** | ✅ WIN |
-| **MBPP** | **70.7%** (205/290, running) | 72.0% | -1.3% | ⏳ Parity |
+| MBPP | 69.2% (346/500) | 72.0% | -2.8% | ❌ Loss |
 | MMLU-Pro | 27.5% (55/200) | 68.0% | -40.5% | ❌ Loss (expected) |
 
 ### Model
