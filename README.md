@@ -69,9 +69,9 @@ busybeaver/
 
 ## Why This Matters
 
-**The dunk isn't "our model is better."**
 
-The dunk is: **You don't need a $10M model to beat a $10M model's benchmark score. You need a 2GB model + a clean eval harness + a gaming PC.**
+
+ **You don't need a $10M model to beat a $10M model's benchmark score. You need a 2GB model + a clean eval harness + a gaming PC.**
 
 Cohere Command A+ is a 218B MoE model that costs $10M+ to train on thousands of H100s. It scored 75% on HumanEval.
 
