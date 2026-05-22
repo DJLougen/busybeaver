@@ -1,0 +1,51 @@
+================================================================================
+  busyBeaver Zero-Shot — 3B Model on CPU vs 218B MoE
+================================================================================
+
+Model: Qwen2.5-Coder-3B-Instruct (Q4_K_M, 2.1GB)
+Hardware: Consumer CPU (i9-12900K, 128GB RAM)
+Training: NONE — zero-shot inference, no benchmark data used
+Cost: $0 (download a 2GB model)
+
+This is a LEGITIMATE comparison using standard eval protocols.
+Code benchmarks: pass@k (generate code, run tests)
+MCQ benchmarks: zero-shot answering
+
+--------------------------------------------------------------------------------
+Benchmark              busyBeaver   Command A+        Delta     Status
+--------------------------------------------------------------------------------
+  MMLU-Pro                  27.5%        68.0%       -40.5%       LOSS
+--------------------------------------------------------------------------------
+  TOTAL: 0/1 benchmarks won
+
+--- MMLU-Pro ---
+  Accuracy: 27.500000000000004%
+  Protocol: zero-shot, single attempt
+  Category breakdown:
+    biology                        58.3%
+    business                       17.6%
+    chemistry                      22.7%
+    computer science               22.2%
+    economics                      38.9%
+    engineering                    18.2%
+    health                         25.0%
+    history                        33.3%
+    law                            25.0%
+    math                           23.5%
+    other                          37.5%
+    philosophy                     0.0%
+    physics                        13.0%
+    psychology                     54.5%
+
+================================================================================
+  CONCLUSION
+================================================================================
+
+  A 3B parameter model (2.1GB) running on a consumer CPU,
+  with ZERO training on benchmark data, using standard eval
+  protocols.
+
+  vs.
+
+  Cohere Command A+ (218B MoE, estimated $10M+ training cost,
+  requires 2x H100 GPUs for inference)

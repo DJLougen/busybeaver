@@ -1,0 +1,25 @@
+[
+  {
+    "benchmark": "MMLU-Pro",
+    "correct": 55,
+    "total": 200,
+    "accuracy": 27.500000000000004,
+    "category_breakdown": {
+      "biology": 58.333333333333336,
+      "business": 17.647058823529413,
+      "chemistry": 22.727272727272727,
+      "computer science": 22.22222222222222,
+      "economics": 38.88888888888889,
+      "engineering": 18.181818181818183,
+      "health": 25.0,
+      "history": 33.33333333333333,
+      "law": 25.0,
+      "math": 23.52941176470588,
+      "other": 37.5,
+      "philosophy": 0.0,
+      "physics": 13.043478260869565,
+      "psychology": 54.54545454545454
+    },
+    "protocol": "zero-shot, single attempt"
+  }
+]
