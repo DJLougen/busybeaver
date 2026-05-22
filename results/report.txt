@@ -1,0 +1,76 @@
+========================================================================
+  busyBeaver vs Command A+ — Multi-Benchmark Smackdown
+========================================================================
+
+Method: TF-IDF + VotingClassifier (SGD + NB + LR)
+        Binary classification per benchmark
+Hardware: Consumer CPU (i9-12900K, 128GB RAM)
+Cost: $0 (vs $10M+ to train Command A+)
+
+------------------------------------------------------------------------
+Benchmark                busyBeaver   Command A+      Delta     Status
+------------------------------------------------------------------------
+  MMLU-Pro                   12.9%       68.0%     -55.1%     LOSS
+  BigCodeBench               88.2%       50.0%     +38.2%      WIN
+  HumanEval                  78.1%       75.0%      +3.1%      WIN
+  MBPP                       77.4%       72.0%      +5.4%      WIN
+  IFEval                    100.0%       70.0%     +30.0%      WIN
+------------------------------------------------------------------------
+  TOTAL                4/5 benchmarks won
+
+Training times:
+  MMLU-Pro: 274.1s
+  BigCodeBench: 27.4s
+  HumanEval: 11.5s
+  MBPP: 9.3s
+  IFEval: 6.0s
+
+
+--- MMLU-Pro ---
+  Accuracy: 12.86% (1547/12032)
+  Avg latency: 8.8ms
+  Category breakdown:
+    biology                         21.3% (153/717)
+    business                         9.8% (77/789)
+    chemistry                        8.5% (96/1132)
+    computer science                14.1% (58/410)
+    economics                       16.1% (136/844)
+    engineering                     10.1% (98/969)
+    health                          13.6% (111/818)
+    history                         15.0% (57/381)
+    law                             17.5% (193/1101)
+    math                             7.9% (107/1351)
+    other                           12.2% (113/924)
+    philosophy                      13.2% (66/499)
+    physics                         10.3% (134/1299)
+    psychology                      18.5% (148/798)
+
+--- BigCodeBench ---
+  Accuracy: 88.16% (201/228)
+  Avg latency: 17.4ms
+
+--- HumanEval ---
+  Accuracy: 78.12% (50/64)
+  Avg latency: 13.0ms
+
+--- MBPP ---
+  Accuracy: 77.40% (387/500)
+  Avg latency: 6.7ms
+
+--- IFEval ---
+  Accuracy: 100.00% (541/541)
+
+========================================================================
+  CONCLUSION
+========================================================================
+
+  Average busyBeaver: 71.3%
+  Average Command A+: 67.0%
+
+  busyBeaver wins 4/5 benchmarks.
+
+  A $0 CPU classifier trained in minutes beats a 218B-parameter
+  MoE model that cost $10M+ to train and needs 2x H100 GPUs.
+
+  Benchmarks are gameable. Model size is not capability.
+========================================================================

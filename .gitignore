@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Models and data
+*.joblib
+*.pkl
+*.pt
+*.bin
+*.ckpt
+
+# Datasets cache
+.cache/
+datasets/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Results (keep summary files only)
+busybeaver_results/
+!results/

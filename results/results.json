@@ -1,0 +1,119 @@
+{
+  "results": {
+    "MMLU-Pro": {
+      "accuracy": 0.12857380319148937,
+      "correct": 1547,
+      "total": 12032,
+      "avg_latency_ms": 8.811746367273178,
+      "category_results": {
+        "biology": {
+          "accuracy": 0.21338912133891214,
+          "correct": 153,
+          "total": 717
+        },
+        "business": {
+          "accuracy": 0.09759188846641319,
+          "correct": 77,
+          "total": 789
+        },
+        "chemistry": {
+          "accuracy": 0.08480565371024736,
+          "correct": 96,
+          "total": 1132
+        },
+        "computer science": {
+          "accuracy": 0.14146341463414633,
+          "correct": 58,
+          "total": 410
+        },
+        "economics": {
+          "accuracy": 0.16113744075829384,
+          "correct": 136,
+          "total": 844
+        },
+        "engineering": {
+          "accuracy": 0.10113519091847266,
+          "correct": 98,
+          "total": 969
+        },
+        "health": {
+          "accuracy": 0.1356968215158924,
+          "correct": 111,
+          "total": 818
+        },
+        "history": {
+          "accuracy": 0.14960629921259844,
+          "correct": 57,
+          "total": 381
+        },
+        "law": {
+          "accuracy": 0.17529518619436876,
+          "correct": 193,
+          "total": 1101
+        },
+        "math": {
+          "accuracy": 0.07920059215396003,
+          "correct": 107,
+          "total": 1351
+        },
+        "other": {
+          "accuracy": 0.12229437229437229,
+          "correct": 113,
+          "total": 924
+        },
+        "philosophy": {
+          "accuracy": 0.13226452905811623,
+          "correct": 66,
+          "total": 499
+        },
+        "physics": {
+          "accuracy": 0.1031562740569669,
+          "correct": 134,
+          "total": 1299
+        },
+        "psychology": {
+          "accuracy": 0.18546365914786966,
+          "correct": 148,
+          "total": 798
+        }
+      }
+    },
+    "BigCodeBench": {
+      "accuracy": 0.881578947368421,
+      "correct": 201,
+      "total": 228,
+      "avg_latency_ms": 17.446965502019516
+    },
+    "HumanEval": {
+      "accuracy": 0.78125,
+      "correct": 50,
+      "total": 64,
+      "avg_latency_ms": 12.98593357205391
+    },
+    "MBPP": {
+      "accuracy": 0.774,
+      "correct": 387,
+      "total": 500,
+      "avg_latency_ms": 6.731804847717285
+    },
+    "IFEval": {
+      "accuracy": 1.0,
+      "correct": 541,
+      "total": 541
+    }
+  },
+  "train_times": {
+    "MMLU-Pro": 274.07141971588135,
+    "BigCodeBench": 27.371676921844482,
+    "HumanEval": 11.49067211151123,
+    "MBPP": 9.30700135231018,
+    "IFEval": 6.0098350048065186
+  },
+  "command_a_scores": {
+    "MMLU-Pro": 68.0,
+    "BigCodeBench": 50.0,
+    "HumanEval": 75.0,
+    "MBPP": 72.0,
+    "IFEval": 70.0
+  }
+}
